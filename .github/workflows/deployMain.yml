@@ -32,4 +32,8 @@ jobs:
         run: |
           npm ci
           npm run build
+      - name: Deploy 🚀
+        uses: jgomezopazo/todolist@docs-pages
+        with:
+          folder: build # The folder the action should deploy.
 
